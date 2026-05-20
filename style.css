@@ -37,8 +37,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-image: url(img/ppgif.gif);
+  background-image: url(img/blackcloverdemon.gif);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: azure;
   z-index: 1000;
 }
@@ -162,7 +164,7 @@ nav {
 }
 
 .parallax-bg-home {
-  background-image: url("img/katana.jpg");
+  background-image: url("img/castle1.jpg");
   background-color: #1a1a2e;
 }
 
@@ -177,7 +179,7 @@ nav {
 }
 
 .parallax-bg-contact {
-  background-image: url("img/japan2.jpg");
+  background-image: url("img/angel.jpg");
   background-color: #1a1a1a;
 }
 
@@ -442,7 +444,7 @@ nav {
   padding: 24px 16px;
   text-align: center;
   color: var(--text-light);
-  background-image: url(img/ppgif.gif);
+  background-image: url(img/blackcloverdemon.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
