@@ -139,6 +139,22 @@ nav {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.secret-photo-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 370px;
+}
+
+.secret-photo {
+  cursor: pointer;
+  opacity: 0.25;
+  transition: 0.3s;
+}
+.secret-photo:hover {
+  opacity: 1;
+}
+
 /* Sections */
 .parallax-section,
 .contact-section {
@@ -236,6 +252,62 @@ nav {
 .parallax-section ul li {
   margin: 15px 0;
   color: #f0eeee;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Photo encadrée */
+.about-photo {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; /* cercle */
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  background: #0f0f1a;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texte à côté */
+.about-text {
+  flex: 1 1 auto;
+  color: var(--text-light, #f0f0f0);
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+  color: var(--text-light, #f0f0f0);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.about-text p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--text-light, #f0f0f0);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.about-text strong {
+  color: var(--crimson, #da0d36);
+  text-shadow: 0 4px 6px rgba(218, 13, 54, 0.8);
 }
 
 .line-1 {
@@ -403,7 +475,7 @@ nav {
   max-width: 500px;
   padding: 40px;
   border-radius: 10px;
-  background: rgba(160, 154, 154, 0.8);
+  background-image: url(img/blackcloverdemon.gif);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
@@ -587,5 +659,29 @@ nav {
 
   .back-to-top {
     display: flex;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 110px;
+    height: 110px;
+    border-width: 3px;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
   }
 }
