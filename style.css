@@ -37,7 +37,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-image: url(img/blackcloverdemon.gif);
+  background-image: url(img/logo\ CHRNL.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@ nav {
 }
 
 .logo img {
-  width: 40px;
+  width: 67px;
 }
 
 .logo h2 {
@@ -88,12 +88,12 @@ nav {
   bottom: 20px;
   width: 0;
   height: 2px;
-  background: var(--crimson-dark);
+  background: var(--text-light);
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(--crimson-dark);
+  color: var(--bg-dark);
   transform: translateY(-2px);
 }
 
@@ -185,12 +185,12 @@ nav {
 }
 
 .parallax-bg-about {
-  background-image: url("img/ippon.jpg");
+  background-image: url("img/athedra2.png");
   background-color: #16213e;
 }
 
 .parallax-bg-services {
-  background-image: url("img/japan1.jpg");
+  background-image: url("img/athedra.png");
   background-color: #0f3460;
 }
 
@@ -325,6 +325,33 @@ nav {
   animation:
     typewriter 4s steps(24) 1s infinite,
     blinkTextCursor 500ms steps(24) infinite normal;
+}
+
+.github-btn {
+  display: inline-block;
+  margin: 2rem auto 0;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: var(--crimson);
+  border: 3px solid var(--crimson);
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+
+.github-btn:hover {
+  background: var(--crimson-dark);
+  border-color: var(--crimson-dark);
+  transform: translateY(-2px);
+}
+
+.github-btn strong {
+  color: #f08b38;
+  text-shadow: 0 5px 6px rgba(66, 41, 41, 0.637);
 }
 
 @keyframes typewriter {
@@ -475,7 +502,7 @@ nav {
   max-width: 500px;
   padding: 40px;
   border-radius: 10px;
-  background-image: url(img/blackcloverdemon.gif);
+  background-image: url(img/ppgif.gif);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
@@ -513,10 +540,10 @@ nav {
 .footer {
   background: var(--bg-dark);
   border-top: 1px solid var(--red-mid);
-  padding: 24px 16px;
+  padding: 17px 16px;
   text-align: center;
   color: var(--text-light);
-  background-image: url(img/blackcloverdemon.gif);
+  background-image: url(img/banniere\ ft\ nav.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -683,5 +710,11 @@ nav {
 
   .about-text p {
     font-size: 1rem;
+  }
+
+  .github-btn {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
