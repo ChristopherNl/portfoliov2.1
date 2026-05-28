@@ -37,7 +37,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-image: url(img/logo\ CHRNL.png);
+  background-image: url(img/coding-gif.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -543,7 +543,7 @@ nav {
   padding: 17px 16px;
   text-align: center;
   color: var(--text-light);
-  background-image: url(img/banniere\ ft\ nav.png);
+  background-image: url(img/coding-gif.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
