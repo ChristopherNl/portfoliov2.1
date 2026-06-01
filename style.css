@@ -140,21 +140,6 @@ nav {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-.secret-photo-link {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  width: 370px;
-}
-
-.secret-photo {
-  cursor: pointer;
-  opacity: 0.25;
-  transition: 0.3s;
-}
-.secret-photo:hover {
-  opacity: 1;
-}
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;

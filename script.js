@@ -39,20 +39,21 @@ const introScreen = document.getElementById("introScreen");
 const unlockBtn = document.getElementById("unlockBtn");
 const langBtns = document.querySelectorAll(".lang-btn");
 
-unlockBtn.addEventListener("click", () => {
-  introScreen.style.opacity = "0";
-  introScreen.style.pointerEvents = "none";
+if (unlockBtn && introScreen) {
+  unlockBtn.addEventListener("click", () => {
+    introScreen.style.opacity = "0";
+    introScreen.style.pointerEvents = "none";
 
-  setTimeout(() => {
-    introScreen.style.display = "top";
-  }, 500);
-});
+    setTimeout(() => {
+      introScreen.style.display = "none";
+    }, 500);
+  });
+}
 
 langBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     langBtns.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
-    const lang = btn.dataset.lang;
-    document.documentElement.lang = lang;
+    document.documentElement.lang = btn.dataset.lang;
   });
 });
