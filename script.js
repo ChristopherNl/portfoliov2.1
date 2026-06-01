@@ -2,6 +2,10 @@ const hamburger = document.querySelector("#hamburger");
 const navLinks = document.querySelector("#navLinks");
 const backToTop = document.querySelector(".back-to-top");
 
+const introScreen = document.getElementById("introScreen");
+const unlockBtn = document.getElementById("unlockBtn");
+const langBtns = document.querySelectorAll(".lang-btn");
+
 if (hamburger && navLinks) {
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
@@ -34,10 +38,6 @@ if (backToTop) {
     });
   });
 }
-
-const introScreen = document.getElementById("introScreen");
-const unlockBtn = document.getElementById("unlockBtn");
-const langBtns = document.querySelectorAll(".lang-btn");
 
 if (unlockBtn && introScreen) {
   unlockBtn.addEventListener("click", () => {

@@ -232,17 +232,17 @@ nav {
 }
 
 .parallax-bg-about {
-  background-image: url("img/Aesthetic\ Workspace\ Pixel\ Art\ 🎧\ Deep\ Focus\ Ambient\ Music\ Live\ Wallpaper.jpg");
+  background-image: url("img/pixel-wallpaper.jpg");
   background-color: #16213e;
 }
 
 .parallax-bg-services {
-  background-image: url("img/Cozy\ Rainy\ Night\ Desk\ Pixel\ Art\ _\ Lofi\ Beats\ &\ Rain\ Sounds\ Ambience.jpg");
+  background-image: url("img/night-desk-pixel.jpg");
   background-color: #0f3460;
 }
 
 .parallax-bg-contact {
-  background-image: url("img/Streamer\ Pixel\ Art\ -\ Ken\ Cremona.gif");
+  background-image: url("img/Streamer-Pixel-Art-Ken-Cremona.gif");
   background-color: #1a1a1a;
 }
 
@@ -572,7 +572,7 @@ nav {
   max-width: 500px;
   padding: 40px;
   border-radius: 10px;
-  background-image: url(img/Aesthetic\ Workspace\ Pixel\ Art\ 🎧\ Deep\ Focus\ Ambient\ Music\ Live\ Wallpaper.jpg);
+  background-image: url(img/Debbie\ Balboa.gif);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
@@ -691,7 +691,7 @@ nav {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background-image: url("img/Trainride\ -\ Max\ Greene.gif");
+  background-image: url("img/Trainride-Max-Greene.gif");
   background-position: center;
   background-size: cover;
   display: flex;
