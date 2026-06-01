@@ -11,10 +11,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
   </head>
   <body>
+    <div class="intro-screen" id="introScreen">
+      <div class="intro-center">
+        <div class="logo-circle">
+          <img src="img/logo CHRNL.png" alt="Logo CHRNL" />
+        </div>
+        <h1>Bienvenue ! &#128513;</h1>
+        <p>
+          Bonjour, bienvenue sur un de mes projets, il servira à présenter mes
+          compétences et mes réalisations, ainsi que mes autres projets.
+        </p>
+        <button id="unlockBtn">Déverrouiller our en savoir plus..</button>
+      </div>
+    </div>
+
     <header>
       <nav>
         <div class="logo">
@@ -27,8 +40,7 @@
           id="hamburger"
           aria-label="Ouvrir le menu"
           role="button"
-          tabindex="0"
-        >
+          tabindex="0">
           <span></span>
           <span></span>
           <span></span>
@@ -45,6 +57,34 @@
     </header>
 
     <main>
+      <section id="about" class="parallax-section">
+        <div class="parallax-bg parallax-bg-about"></div>
+
+        <div class="about-content">
+          <div class="about-photo">
+            <img src="img/logo CHRNL.png" alt="MR.K" />
+          </div>
+
+          <div class="about-text">
+            <h2>À propos de moi</h2>
+            <p>
+              Dev web self-taught, passionné de <strong>PC gaming</strong> et de
+              <strong>code</strong>. lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Optio ullam, exercitationem sapiente consequatur
+              facilis maiores ratione facere voluptatum rerum quo labore
+              nesciunt quaerat at distinctio quibusdam vitae sed, sequi
+              officiis?
+            </p>
+
+            <small class="gif-credit">
+              GIF by
+              <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
+                Nom de l’auteur
+              </a>
+            </small>
+          </div>
+        </div>
+      </section>
       <section id="home" class="parallax-section">
         <div class="parallax-bg parallax-bg-home"></div>
 
@@ -52,7 +92,7 @@
           <h2><strong>Bienvenue sur mon portfolio</strong></h2>
           <section class="skills">
             <div class="skills-text">
-              <h2>Mes connaissances</h2>
+              <h2>Prése,mes connaissances</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 ullam, exercitationem sapiente consequatur facilis maiores
@@ -76,36 +116,12 @@
               </div>
             </div>
           </section>
-        </div>
-      </section>
-
-      <section id="about" class="parallax-section">
-        <div class="parallax-bg parallax-bg-about"></div>
-
-        <div class="about-content">
-          <div class="about-photo">
-            <img src="img/logo CHRNL.png" alt="MR.K" />
-          </div>
-
-          <div class="about-text">
-            <h2>À propos de moi</h2>
-            <p>
-              Dev web self-taught, passionné de <strong>PC gaming</strong> et de
-              <strong>code</strong>. lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Optio ullam, exercitationem sapiente consequatur
-              facilis maiores ratione facere voluptatum rerum quo labore
-              nesciunt quaerat at distinctio quibusdam vitae sed, sequi
-              officiis?
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="parallax-section">
-        <div class="parallax-bg parallax-bg-services"></div>
-        <div class="parallax-content">
-          <h2>Services</h2>
-          <p class="line-1 anim-typewriter">En cours de développement...</p>
+          <small class="gif-credit">
+            GIF by
+            <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
+              Nom de l’auteur
+            </a>
+          </small>
         </div>
       </section>
 
@@ -147,8 +163,7 @@
               <img
                 src="img/Weather-app-tokyo-copy.png"
                 alt="Weather App"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div class="project-info">
                 <h3>Weather App</h3>
                 <p>
@@ -178,8 +193,7 @@
               <img
                 src="img/mdp gen screen.png"
                 alt="Générateur de mot de passe"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div class="project-info">
                 <h3>Générateur de mot de passe</h3>
                 <p>
@@ -209,12 +223,17 @@
             href="https://github.com/ChristopherNl"
             target="_blank"
             rel="noopener noreferrer"
-            class="btn github-btn"
-          >
+            class="btn github-btn">
             Voir plus sur mon
             <strong><i class="fa-brands fa-github"></i>&nbspGitHub</strong>
             <i class="fa-solid fa-up-right-from-square"></i>
           </a>
+          <small class="gif-credit">
+            GIF by
+            <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
+              Nom de l’auteur
+            </a>
+          </small>
         </div>
       </section>
 
@@ -275,6 +294,20 @@
         </div>
       </section>
 
+      <section id="services" class="parallax-section">
+        <div class="parallax-bg parallax-bg-services"></div>
+        <div class="parallax-content">
+          <h2>Services</h2>
+          <p class="line-1 anim-typewriter">En cours de développement...</p>
+          <small class="gif-credit">
+            GIF by
+            <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
+              Nom de l’auteur
+            </a>
+          </small>
+        </div>
+      </section>
+
       <section id="contact" class="contact-section">
         <div class="parallax-bg parallax-bg-contact"></div>
         <div class="contact-container">
@@ -285,6 +318,18 @@
             <textarea placeholder="Votre message" required></textarea>
             <button type="submit">Envoyer</button>
           </form>
+          <small class="gif-credit">
+            GIF by
+            <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
+              Nom de l’auteur
+            </a>
+          </small>
+          <small class="gif-credit">
+            GIF by
+            <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
+              Nom de l’auteur
+            </a>
+          </small>
         </div>
       </section>
     </main>
@@ -301,16 +346,14 @@
             href="https://github.com/ChristopherNl"
             target="_blank"
             rel="noopener noreferrer"
-            title="GitHub"
-          >
+            title="GitHub">
             <i class="fab fa-github x2"></i>
           </a>
           <a
             href="https://linkedin.com/in/christopher-noel"
             target="_blank"
             rel="noopener noreferrer"
-            title="LinkedIn"
-          >
+            title="LinkedIn">
             <i class="fab fa-linkedin x2"></i>
           </a>
         </div>
