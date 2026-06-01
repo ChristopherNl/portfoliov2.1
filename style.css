@@ -56,6 +56,7 @@ nav {
 
 .logo h2 {
   color: #f0eeee;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   margin-left: 10px;
   font-size: 25px;
 }
@@ -88,12 +89,12 @@ nav {
   bottom: 20px;
   width: 0;
   height: 2px;
-  background: var(--text-light);
+  background: var(--red-bright);
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(--bg-dark);
+  color: var(--red-bright);
   transform: translateY(-2px);
 }
 
@@ -153,6 +154,67 @@ nav {
 }
 .secret-photo:hover {
   opacity: 1;
+}
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--crimson-deep, #f0f0f0);
+  border-radius: 20px;
+  color: var(--bg-dark, #111);
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.skills-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--bg-dark, #111);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.skills-text p {
+  color: var(--bg-dark, #111);
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+  line-height: 1.6;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: var(--bg-dark, #111);
+  padding: 1rem 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+  background: var(--crimsondark, #8b0000);
+}
+
+.skill-item i {
+  font-size: 1.4rem;
+  color: var(--crimson, #dc143c);
+  width: 24px;
+  text-align: center;
+}
+
+.skill-item span {
+  font-weight: 550;
+  color: var(--text-light, #f0f0f0);
 }
 
 /* Sections */
@@ -234,6 +296,11 @@ nav {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: var(--text-light);
+}
+
+.parallax-section h2 strong {
+  color: var(--text-light, #f0f0f0);
+  text-shadow: 0 4px 9px var(--crimson-deep, #470210);
 }
 
 .parallax-section p {
@@ -716,5 +783,9 @@ nav {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
   }
 }
