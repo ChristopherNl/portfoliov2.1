@@ -385,7 +385,7 @@ nav {
   width: 0;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 9rem;
+  font-size: 4rem;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -395,6 +395,14 @@ nav {
   animation:
     typewriter 4s steps(24) 1s infinite,
     blinkTextCursor 500ms steps(24) infinite normal;
+}
+
+.services-gif {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
 .github-btn {
@@ -444,6 +452,25 @@ nav {
     border-right-color: transparent;
   }
 }
+/*.loader {
+  width: 350px;
+  height: 50px;
+  border-radius: 50px;
+  background:
+    repeating-linear-gradient(135deg, #4b020f 0 10px, #000000 0 20px) 0/0%
+      no-repeat,
+    repeating-linear-gradient(135deg, #ddd 0 10px, #eee 0 20px) 0/100%;
+  animation: l3 2s infinite;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+@keyframes l3 {
+  100% {
+    background-size: 100%;
+  }
+}*/
 
 #projets {
   position: relative;
