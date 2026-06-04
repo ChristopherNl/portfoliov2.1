@@ -81,3 +81,35 @@ function unlockScreen() {
     aboutSection.scrollIntoView({ behavior: "smooth", block: "start" });
   }, 600);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.getElementById("contacts-form");
+  const successBox = document.getElementById("contacts-success");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          contactForm.reset();
+          successBox.style.display = "block";
+        } else {
+          console.log("Erreur d’envoi Formspree");
+        }
+      } catch (error) {
+        console.log("Erreur réseau :", error);
+      }
+    });
+  }
+});
