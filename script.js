@@ -103,12 +103,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (response.ok) {
           contactForm.reset();
-          successBox.style.display = "block";
+          if (successBox) successBox.style.display = "block";
         } else {
-          console.log("Erreur d’envoi Formspree");
+          const json = await response.json().catch(() => ({}));
+          console.log("Erreur Formspree:", response.status, json);
         }
       } catch (error) {
-        console.log("Erreur réseau :", error);
+        console.log("Erreur réseau:", error);
       }
     });
   }
