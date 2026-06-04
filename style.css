@@ -633,10 +633,29 @@ nav {
   cursor: pointer;
 }
 
+.field-error {
+  color: #ff0000;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+.contacts-error {
+  background: #1c1c1c;
+  padding: 12px;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 15px;
+  display: none;
+}
+
 .contacts-success {
   background: #1c1c1c;
   padding: 20px;
-  border: 2px solid #ff0000;
+  border: 2px solid #00cc00;
   border-radius: 5px;
   text-align: center;
   margin-top: 20px;
@@ -644,10 +663,9 @@ nav {
 }
 
 .contacts-success h3 {
-  color: #ff0000;
+  color: #00cc00;
   margin-bottom: 10px;
 }
-
 /* Footer */
 .footer {
   background: var(--bg-dark);

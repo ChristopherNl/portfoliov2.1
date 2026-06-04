@@ -82,35 +82,9 @@ function unlockScreen() {
   }, 600);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const contactForm = document.getElementById("contacts-form");
-  const successBox = document.getElementById("contacts-success");
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", async function (e) {
-      e.preventDefault();
-
-      const formData = new FormData(contactForm);
-
-      try {
-        const response = await fetch(contactForm.action, {
-          method: "POST",
-          body: formData,
-          headers: {
-            Accept: "application/json",
-          },
-        });
-
-        if (response.ok) {
-          contactForm.reset();
-          if (successBox) successBox.style.display = "block";
-        } else {
-          const json = await response.json().catch(() => ({}));
-          console.log("Erreur Formspree:", response.status, json);
-        }
-      } catch (error) {
-        console.log("Erreur réseau:", error);
-      }
-    });
-  }
-});
+window.formspree =
+  window.formspree ||
+  function () {
+    (formspree.q = formspree.q || []).push(arguments);
+  };
+formspree("initForm", { formElement: "#contacts-form", formId: "xlgkeaqk" });

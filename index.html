@@ -319,30 +319,50 @@
         <div class="parallax-bg parallax-bg-contact"></div>
         <div class="contact-container">
           <h2>Contactez-moi</h2>
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/xlgkeaqk"
-            method="POST">
-            <input type="text" name="name" placeholder="Votre nom" required />
+
+          <!-- Conteneurs pour succès et erreurs globaux -->
+          <div data-fs-success class="contacts-success">
+            <h3>✅ Message envoyé !</h3>
+            <p>Je vous répondrai rapidement.</p>
+          </div>
+
+          <div data-fs-error class="contacts-error"></div>
+
+          <!-- Formulaire -->
+          <form id="contacts-form" class="contact-form">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre nom"
+              required
+              data-fs-field />
+            <span data-fs-error="name" class="field-error"></span>
+
             <input
               type="email"
+              id="email"
               name="email"
               placeholder="Votre email"
-              required />
+              required
+              data-fs-field />
+            <span data-fs-error="email" class="field-error"></span>
+
             <textarea
+              id="message"
               name="message"
               placeholder="Votre message"
-              required></textarea>
-            <button type="submit">Envoyer</button>
+              required
+              data-fs-field></textarea>
+            <span data-fs-error="message" class="field-error"></span>
+
+            <button type="submit" data-fs-submit-btn>Envoyer</button>
           </form>
-          <div id="contacts-success" class="contacts-success">
-            <h3>✅ Message envoyé !</h3>
-            <p>Je vous répondrez rapidement.</p>
-          </div>
+
           <small class="gif-credit">
             GIF by
             <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
-              Nom de l’auteur
+              Nom de l'auteur
             </a>
           </small>
         </div>
@@ -376,5 +396,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
   </body>
 </html>
