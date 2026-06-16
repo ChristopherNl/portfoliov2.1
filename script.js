@@ -9,7 +9,6 @@ const aboutSection = document.querySelector("#navLinks");
 
 const bgMusic = document.getElementById("bg-music");
 const muteBtn = document.getElementById("muteBtn");
-const volumeSlider = document.getElementById("volumeSlider");
 
 if (hamburger && navLinks) {
   hamburger.addEventListener("click", () => {
@@ -98,7 +97,6 @@ let currentVolume = 0.03;
 
 if (bgMusic) {
   bgMusic.volume = currentVolume;
-  volumeSlider.value = currentVolume;
 }
 
 document.addEventListener(
@@ -121,17 +119,4 @@ muteBtn.addEventListener("click", () => {
     muteBtn.textContent = "🔇";
   }
   isMuted = !isMuted;
-});
-
-volumeSlider.addEventListener("input", () => {
-  if (!bgMusic) return;
-  const vol = parseFloat(volumeSlider.value);
-  bgMusic.volume = vol;
-
-  // Si le volume devient > 0 et qu’on est en mute, on unmute
-  if (vol > 0 && isMuted) {
-    bgMusic.muted = false;
-    muteBtn.textContent = "🔊";
-    isMuted = false;
-  }
 });
