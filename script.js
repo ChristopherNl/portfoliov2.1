@@ -94,6 +94,12 @@ window.formspree =
 formspree("initForm", { formElement: "#contacts-form", formId: "xlgkeaqk" });
 
 let isMuted = false;
+let currentVolume = 0.03;
+
+if (bgMusic) {
+  bgMusic.volume = currentVolume;
+  volumeSlider.value = currentVolume;
+}
 
 document.addEventListener(
   "click",

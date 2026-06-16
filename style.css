@@ -850,21 +850,23 @@ nav {
   transform: scale(1.1);
 }
 
-.volume-control {
+/*.volume-control {
   position: fixed;
-  bottom: 30px; /* en dessous du mute */
+  bottom: 30px; 
   right: 20px;
   z-index: 9999;
-  width: 120px; /* largeur du slider */
+  width: 120px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+
 .volume-control input[type="range"] {
   width: 100%;
   cursor: pointer;
 }
+*/
 .intro-screen {
   position: fixed;
   inset: 0;
