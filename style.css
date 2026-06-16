@@ -17,6 +17,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   background-color: #222;
@@ -312,7 +314,7 @@ nav {
 }
 
 .parallax-bg-projects {
-  background-image: url("img/Debbie\ Balboa.gif");
+  background-image: url("img/Debbie-Balboa.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,22 +411,6 @@ nav {
   text-align: left;
 }
 
-.gif-credit {
-  margin-top: auto;
-  padding-top: 1rem;
-  font-size: 0.85rem;
-  color: rgba(240, 240, 240, 0.7);
-}
-
-.gif-credit a {
-  color: var(--crimson, #da0d36);
-  text-decoration: none;
-}
-
-.gif-credit a:hover {
-  text-decoration: underline;
-}
-
 .about-text h2 {
   font-size: 2.2rem;
   margin: 0 0 10px 0;
@@ -460,6 +446,25 @@ nav {
   animation:
     typewriter 4s steps(24) 1s infinite,
     blinkTextCursor 500ms steps(24) infinite normal;
+}
+
+.gif-credit {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  font-size: 0.85rem;
+  color: rgba(240, 240, 240, 0.7);
+  text-align: center;
+}
+
+.gif-credit a {
+  color: var(--crimson, #da0d36);
+  text-decoration: none;
+}
+
+.gif-credit a:hover {
+  text-decoration: underline;
 }
 
 .services-gif {
@@ -673,7 +678,7 @@ nav {
   max-width: 500px;
   padding: 40px;
   border-radius: 10px;
-  background-image: url(img/Debbie\ Balboa.gif);
+  background-image: url(img/Debbie-Balboa.gif);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
@@ -742,6 +747,7 @@ nav {
 }
 /* Footer */
 .footer {
+  margin-top: auto;
   background: var(--bg-dark);
   border-top: 1px solid var(--red-mid);
   padding: 17px 16px;
@@ -787,7 +793,7 @@ nav {
 /* Back to top */
 .back-to-top {
   position: fixed;
-  bottom: 80px;
+  bottom: 130px; /* plus haut */
   right: 20px;
   width: 50px;
   height: 50px;
@@ -821,11 +827,49 @@ nav {
   transform: translateY(-3px);
 }
 
+.round-btn {
+  position: fixed;
+  bottom: 70px; /* en dessous du back-to-top */
+  right: 20px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+
+.round-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+.volume-control {
+  position: fixed;
+  bottom: 30px; /* en dessous du mute */
+  right: 20px;
+  z-index: 9999;
+  width: 120px; /* largeur du slider */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume-control input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
 .intro-screen {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background-image: url("img/Trainride-Max-Greene.gif");
+  background-image: url("img/night-city.gif");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -873,7 +917,7 @@ nav {
 .logo-circle img {
   width: 100px;
   height: 120px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #unlockBtn {

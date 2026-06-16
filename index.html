@@ -17,6 +17,10 @@
       referrerpolicy="no-referrer" />
   </head>
   <body>
+    <audio id="bg-music" loop load="auto">
+      <source src="musique/Lizzy-wizzy-delicate-weapon.mp3" type="audio/mpeg" />
+    </audio>
+
     <div class="intro-screen" id="introScreen">
       <div class="intro-center">
         <div class="logo-circle">
@@ -85,14 +89,17 @@
               mais j'aime aussi explorer le back-end et les technologies
               full-stack (Toujours en autodidacte et en apprentissage).
             </p>
-
-            <small class="gif-credit">
-              GIF by
-              <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
-              </a>
-            </small>
           </div>
         </div>
+        <small class="gif-credit">
+          GIF by
+          <a
+            href="https://fr.pinterest.com/pin/800585271299932109/"
+            target="_blank"
+            rel="noopener noreferrer">
+            The Pixel Window
+          </a>
+        </small>
       </section>
       <section id="home" class="parallax-section">
         <div class="parallax-bg parallax-bg-home"></div>
@@ -125,13 +132,16 @@
               </div>
             </div>
           </section>
-          <small class="gif-credit">
-            GIF by
-            <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
-              Nom de l’auteur
-            </a>
-          </small>
         </div>
+        <small class="gif-credit">
+          GIF by
+          <a
+            href="https://fr.pinterest.com/pin/800585271302168774/"
+            target="_blank"
+            rel="noopener noreferrer">
+            The Pixel Windoww
+          </a>
+        </small>
       </section>
 
       <section class="projects-section parallax-section" id="projets">
@@ -237,16 +247,16 @@
             <strong><i class="fa-brands fa-github"></i>&nbspGitHub</strong>
             <i class="fa-solid fa-up-right-from-square"></i>
           </a>
-          <small class="gif-credit">
-            GIF by
-            <a
-              href="https://debbie-sketch.tumblr.com/post/634798392583782401/twitch-commissions-i-did-these-days?utm_source=Pinterest&utm_medium=organic"
-              target="_blank"
-              rel="noopener noreferrer">
-              Debbie Balboa.
-            </a>
-          </small>
         </div>
+        <small class="gif-credit">
+          GIF by
+          <a
+            href="https://debbie-sketch.tumblr.com/post/634798392583782401/twitch-commissions-i-did-these-days?utm_source=Pinterest&utm_medium=organic"
+            target="_blank"
+            rel="noopener noreferrer">
+            Debbie Balboa.
+          </a>
+        </small>
       </section>
 
       <section
@@ -358,6 +368,15 @@
               pour le design d'interfaces et OBS et twitch.
             </p>
           </div>
+          <small class="gif-credit">
+            GIF by
+            <a
+              href="https://debbie-sketch.tumblr.com/post/634798392583782401/twitch-commissions-i-did-these-days?utm_source=Pinterest&utm_medium=organic"
+              target="_blank"
+              rel="noopener noreferrer">
+              Debbie Balboa.
+            </a>
+          </small>
         </div>
       </section>
 
@@ -368,13 +387,16 @@
           <!-- <div class="loader"></div> -->
           <p class="line-1 anim-typewriter">En cours de développement...</p>
           <!-- <img src="img/waiting.gif" alt="Animation Services" /> -->
-          <small class="gif-credit">
-            GIF by
-            <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
-              Nom de l’auteur
-            </a>
-          </small>
         </div>
+        <small class="gif-credit">
+          GIF by
+          <a
+            href="https://www.artstation.com/artwork/3dzme2"
+            target="_blank"
+            rel="noopener noreferrer">
+            Karina Formanova
+          </a>
+        </small>
       </section>
 
       <section id="contact" class="contact-section">
@@ -420,24 +442,38 @@
 
             <button type="submit" data-fs-submit-btn>Envoyer</button>
           </form>
-
-          <small class="gif-credit">
-            GIF by
-            <a href="TON_LIEN_ICI" target="_blank" rel="noopener noreferrer">
-              Nom de l'auteur
-            </a>
-          </small>
         </div>
+        <small class="gif-credit">
+          GIF by
+          <a
+            href="https://www.behance.net/gallery/102886203/Streamer-Pixel-Art"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ken Cremona
+          </a>
+        </small>
       </section>
     </main>
 
     <a href="#home" class="back-to-top" aria-label="Remonter en haut">
       <i class="fas fa-arrow-up"></i>
     </a>
+    <button id="muteBtn" class="round-btn" title="Mute/Unmute">🔊</button>
+    <div class="volume-control">
+      <input
+        type="range"
+        id="volumeSlider"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.5"
+        title="Volume" />
+    </div>
 
     <footer class="footer">
       <div class="footer-content">
         <p>&copy; 2026 Christopher Noel. Tous droits réservés.</p>
+
         <div class="social-links">
           <a
             href="https://github.com/ChristopherNl"
