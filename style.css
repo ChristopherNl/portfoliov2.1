@@ -427,8 +427,8 @@ nav {
 }
 
 .about-text strong {
-  color: var(--crimson, #da0d36);
-  text-shadow: 0 4px 6px rgba(218, 13, 54, 0.8);
+  color: var(--crimson-dark, #200404);
+  text-shadow: 0 4px 6px rgba(247, 247, 247, 0.8);
 }
 
 .line-1 {
